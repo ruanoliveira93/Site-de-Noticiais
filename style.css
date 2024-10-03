@@ -1,0 +1,361 @@
+/* SITE DE NOTÍCIAS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    font-family: "Trebucchet MS", Helvetica, sans-serif;
+    max-width: 100%;
+}
+
+#container {
+    max-width: 100%;
+    height: 230px;
+    margin: 0;
+    background: #fff url(./img/fundo.png) repeat-x;
+}
+
+#topo {
+    width: 750px;
+    height: 180px;
+    margin: 0 auto 0 auto;
+    background: url(./img/detalhe-topo.png) no-repeat right top;
+}
+
+#topo img {
+    padding-top: 20px;
+}
+
+#topo nav {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-flow: row;
+    gap: 1px;
+    width: 80%;
+    height: 40px;
+    padding: 10px 0px;
+    margin-top: 40px;
+}
+
+#topo #menu a {
+    text-decoration: none;
+    color: white;
+    background: #b10333;
+    padding: 10px 15px;
+}
+
+.home #container #topo #menu a.home,
+.brasil #container #topo #menu a.brasil,
+.internacional #container #topo #menu a.internacional,
+.economia #container #topo #menu a.economia,
+.saude #container #topo #menu a.saude,
+.ciencia #container #topo #menu a.ciencia,
+.fotos #container #topo #menu a.fotos {
+    background: red;
+}
+
+#container #topo #menu a:hover {
+    background: red;
+}
+
+#conteudo {
+    width: 750px;
+    margin: 60px auto 0 auto;
+}
+
+#primario {
+    width: 270px;
+    float: right;
+    margin: 0 0 20px 0;
+}
+
+#primario .caixa h2 {
+    background: darkblue;
+    color: white;
+    padding: 5px;
+}
+
+#primario .caixa h3 {
+    background: #870529;
+    color: white;
+    padding: 2px 5px;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+#primario .caixa img {
+    width: 100%;
+}
+
+#duas-colunas #primario {
+    width: 555px;
+    margin: 0 0 20px 0;
+}
+
+#duas-colunas #primario h3 {
+    width: 28.5%;
+}
+
+#uma-coluna #primario {
+    width: 750px;
+    margin: 0 0 20px 0;
+}
+
+#uma-coluna #primario h3{
+    width: 21.1%;
+}
+
+#uma-coluna #secundario {
+    width: 750px;
+    margin: 0 0 20px 0;
+}
+
+#uma-coluna #secundario h3 {
+    width: 34.1%;
+}
+
+#duas-colunas #mundo {
+    width: 555px;
+    margin: 0 0 20px 0;
+}
+
+#duas-colunas #mundo h4 {
+    max-width: 500px;
+    font-size: 20px;
+}
+
+#duas-colunas #mundo img {
+    width: 30%;
+}
+
+#duas-colunas #mundo p {
+    max-width: 800px;
+    font-size: 18px;
+}
+
+#secundario {
+    width: 270px;
+    float: right;
+    margin: 0 15px 20px 0;
+}
+
+#secundario .caixa h2 {
+    background: darkblue;
+    width: 270px;
+    padding: 5px;
+    color: white;
+    text-transform: capitalize;
+}
+
+#secundario .caixa .caixa-conteudo h3 {
+    color: white;
+    background: #870529;
+    width: 270px;
+    padding: 2px 5px;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+#secundario .caixa .caixa-conteudo img {
+    width: 100%;
+}
+
+#lateral {
+    width: 180px;
+    float: left;
+    margin: 0 15px 20px 0;
+    border: 1px solid #e4e4e4;
+}
+
+#lateral h2 {
+    text-align: left;
+    padding: 5px;
+    background: darkblue;
+    color: white;
+}
+
+#lateral .caixa {
+    margin: 10px 0;
+    padding: 5px 0 5px 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    list-style-type: none;
+}
+
+#lateral .caixa li {
+    padding: 5px 0;
+    width: fit-content;
+}
+
+#lateral .caixa a {
+    text-decoration: none;
+    text-align: center;
+    padding: 0 0 0 5px;
+    color: black;
+    width: 100%;
+}
+
+#lateral .caixa a:hover {
+    font-size: 16px;
+    font-weight: 550;
+    background: url(img/marcador.png) no-repeat left center;
+    padding-left: 20px;
+}
+
+#mundo {
+    width: 270px;
+    float: right;
+    margin-bottom: 10px;
+}
+
+#mundo h3 {
+    background: darkblue;
+    color: white;
+    padding: 5px;
+}
+
+#mundo .caixa-conteudo {
+    width: 100%;
+}
+
+#mundo .caixa-conteudo .conteudo {
+    width: 100%;
+    padding: 5px 0;
+}
+
+#mundo .caixa-conteudo .conteudo img {
+    width: 50%;
+    margin: 5px 5px 5px 0px;
+    float: left;
+}
+
+#mundo .caixa-conteudo .conteudo h4 {
+    font-size: 15px;
+    margin-top: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 120px;
+}
+
+#mundo .caixa-conteudo .conteudo p {
+overflow: hidden;
+max-width: 200px;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 4;
+-webkit-box-orient: vertical;
+font-size: 14px;
+
+}
+
+#noticias-recentes {
+    width: 270px;
+    float: right;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+#noticias-recentes h3 {
+    background: darkblue;
+    color: white;
+    padding: 5px;
+}
+
+#noticias-recentes .caixa-conteudo {
+    width: 100%;
+}
+
+#noticias-recentes .caixa-conteudo .conteudo {
+    width: 100%;
+    padding: 5px 0;
+}
+
+#noticias-recentes .caixa-conteudo .conteudo img {
+    width: 50%;
+    margin: 5px 5px 5px 0px;
+    float: left;
+}
+
+#noticias-recentes .caixa-conteudo .conteudo h4 {
+    font-size: 15px;
+    margin-top: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 120px;
+}
+
+#noticias-recentes .caixa-conteudo .conteudo p {
+overflow: hidden;
+max-width: 200px;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 4;
+-webkit-box-orient: vertical;
+font-size: 14px;
+
+}
+
+#news {
+    float: left;
+    width: 180px;
+    height: 300px;
+    border: 1px solid #e4e4e4;
+    margin-bottom: 10px;
+}
+
+#news h2 {
+    background: darkblue;
+    color: white;
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+#news #formulario-news {
+    padding: 20px 2px;
+}
+
+#news #formulario-news form div label {
+    display: block;
+    cursor: pointer;
+}
+
+#news #formulario-news form div input[type="email"] {
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+    margin: 0 0 4px 0;
+    border: 1px solid #dbdbdb;
+}
+
+#news #formulario-news form div input[type="submit"] {
+    padding: 4px 5px;
+    margin: 20px 53px 0 53px;
+    background-color: #b10333;
+    border: 0.8px solid #870529;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+#rodape {
+    width: 100%;
+    height: 80px;
+    background: darkblue;
+    text-align: center;
+    clear: both;
+    padding: 30px 0 30px 0;
+    color: white;
+}
